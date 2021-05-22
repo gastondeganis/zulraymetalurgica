@@ -1,0 +1,419 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  font-family:"Arial";
+}
+
+/* ---------------------------   HEADER --------------------------------------- */
+
+.header{
+  background-color: rgb(27, 20, 100);
+  color: white;
+  width: 100%;
+  position: flex;
+  z-index: 100;
+}
+
+.flexbox-header{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contacto {
+  background-color: orange;
+ }
+
+ #contacto:hover {
+  background-color: rgb(177, 115, 0);
+ }
+
+.menu-box{
+  align-content: flex-end;
+  max-width: max-content;
+  padding-left: 10px;
+  }
+
+nav > a {
+  display: inline-flex;
+}
+
+.menu-box a {
+  font-weight:500;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menu-box a:hover {
+   background-color: rgb(25, 51, 168);
+   transition-property: all;
+   transition-duration: 0.2s;
+   transition-timing-function: linear;
+   text-decoration-line: none;
+
+}
+
+.menu-box a:visited{
+  color: white;
+  text-decoration-line: none;
+ }
+
+
+@media screen and (max-width: 900px) {
+  .flexbox-header{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer_flex {
+    display: flex;
+    margin: 0 100px; 
+    padding: 20px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+}
+@media screen and (max-width: 640px) {
+  .menu-box a {
+    border:1px white;
+    font-weight:500;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .menu-box{
+    padding-left:0;
+    align-content: flex-end;
+    max-width: max-content;
+    margin: 0 10px 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+  #info_footer p{
+    text-align: center;
+  }
+
+  #mail_tel_footer {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  #mail_tel_footer li:first-child {
+    margin-bottom: 10px;
+  }
+  #mail_tel_footer li:nth-child(2) {
+    padding: 10px;
+    background-color: rgb(7, 7, 32);
+    border-radius: 10px;
+  }
+
+  #mail_tel_footer li:nth-child(2) a:active{
+    color:white;
+    text-decoration: none;
+  }
+  }
+
+
+
+ /* CAROUSEL */
+
+ 
+.carousel-item {
+    height: 30rem;
+}
+
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 35rem;
+}
+
+/* -------------------------------SECCION MUESTRAS-------------------------------------- */
+
+#container_muestra {
+   margin: 70px 120px 50px 120px;
+}
+
+#flexbox_muestra {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.muestra_item {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto_muestra {
+  border-radius: 50%;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  box-align: center;
+}
+
+.muestra_item h2 {
+  text-align: center;
+  padding: 10px 0px 10px 0px
+}
+
+.muestra_item p {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.muestra_item a {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  background-color: darkblue;
+  color: white;
+  border-radius: 5px;
+}
+
+.muestra_item a:hover {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  color:white;
+  text-decoration-line: none;
+  background-color: rgb(3, 3, 110);
+  
+}
+#ver_mas {
+  display: flex;
+  align-items: center;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+#boton_vm:hover {
+  color:midnightblue;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  text-decoration-line: none;
+
+}
+
+.featurette-divider{
+  margin: 10px 100px 10px 100px;
+}
+
+/*---------------------------------------Seccion Contacto----------------------------------------------- */
+
+#titulo_contacto {
+  margin: 30px;
+  text-align: center;
+}
+
+#container_contacto {
+  margin: 10px 120px 50px 120px;
+  flex-direction: row;
+  display: flex;
+
+}
+
+.flex_contacto_maps {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.datos_contacto {
+  background-color: rgb(216, 216, 216);
+  min-width: max-content;
+  }
+
+#imagen_contacto {
+  text-align: center;
+}
+
+.info_contacto {
+  padding: 20px;
+}
+
+.info_sin_margin {
+  margin: 0;
+}
+
+.info_contacto ul {
+  padding: 0px ;
+}
+
+form div {
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+form div label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+form div input {
+  width: 250px;
+}
+form button {
+  
+  background-color: midnightblue; /* Green */
+  border: none;
+  border-radius: 10px;
+  color: white;
+  margin: 20px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+form button:hover {
+  background-color: rgb(7, 7, 32);
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  text-decoration-line: none;
+}
+/* ----------------------------------FOOTER---------------------------------------------*/
+
+footer {
+  background-color: gray;
+  position: static;
+}
+
+.footer_flex {
+  display: flex;
+  margin: 0 100px; 
+  padding: 20px 0;
+  align-items: center;
+  flex-wrap: wrap;
+  bottom:0; 
+  z-index:999999
+}
+
+.imagen_footer {
+  padding:0 10px 0 10px;
+}
+
+#info_footer {
+  padding: 0 20px 0 20px;
+}
+
+#info_footer p:nth-child(3) {
+  margin:0;
+}
+
+#mail_tel_footer li:nth-child(2) a{
+  color:#212529;
+  text-decoration: underline;
+}
+
+#mapa {
+  padding: 40px;
+  color:#212529;
+  text-decoration: underline;
+}
+
+/*-------------------------------- TRABAJOS ------------------------------------*/
+
+.titulo_principal {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+
+}
+
+.titulo{
+  margin: 50px;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  width: 100%;
+ }
+
+.grid div{
+  text-align: center;
+ }
+
+.item_grid {
+  padding-bottom: 20px;
+}
+
+ .grid div h2,p {
+  text-align: center;
+ }
+
+.grid div:first-child {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.grid div:nth-child(2) {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.grid div:nth-child(3) {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+/* ------------------------   QUIENES SOMOS ----------------------------- */
+
+#quienes_somos {
+  display: flex;
+  margin: 40px;
+  justify-content: center;
+  border: thin;
+}
+
+.texto {
+   width: 50%;
+}
+
+.texto p {
+  text-align: justify;
+  padding: 20px;
+}
+#quienes_somos p {
+  width: 50%;
+  text-align: left;
+}
+
+/* ------------------------------ mapa de sitio --------------------------- */
+.mapa {
+  margin: 10px 200px 50px;
+  text-align: center;
+  
+}
+
+.mapa li a {
+  border-radius: 20px;
+  padding:0 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 4rem;
+  background-color: rgb(7, 7, 32);
+}

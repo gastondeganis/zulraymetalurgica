@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- FONTAWESOME-->
+
+    <script src="https://kit.fontawesome.com/d86c2cb3bd.js" crossorigin="anonymous"></script>
+
+    <!--  CSS  -->
+
+    <link rel="STYLESHEET" href="css/estilos.css">
+
+    <!-- BOOTSTRAP -->
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <script src="bootstrap/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- GOOGLE FONTS  
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    -->
+    <title>Zulray Metalúrgica</title>
+    <!-- ??? (La 1ra. es la de Bootstrap, otra mia) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+</head>
+
+<body>
+
+    <!-- ---------------------------- HEADER ----------------------------------   -->
+    <section class="header">
+        <div class="flexbox-header">
+            <div id="logoHeader">
+                <a href="index.html">
+                    <img style="width: auto; height: 100px;" src="images/logo-completo-blanco.png">
+                </a>
+            </div>
+            <div>
+                <div id="menu">
+
+                    <nav class="menu-box">
+                        <a href="index.html" >INICIO</a>
+                        <a href="about.html">QUIENES SOMOS</a>
+                        <a href="trabajos.html">NUESTROS TRABAJOS</a>
+                        <a id="contacto" href="contact.html">CONTACTO</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO  -->
+    <section id="seccion_contacto">
+        <div id="titulo_contacto">
+            <h1>Contacto</h1>
+        </div>
+        <hr class="featurette-divider">
+        <div id="container_contacto">
+
+            <div class="datos_contacto">
+                <div class="imagen_contacto">
+                    <img src="images/favicon.png" height="200px">
+                </div>
+                <div class="info_contacto">
+                    <h6>Info de contacto</h6>
+                    <p class="info_sin_margin"><b>Zulray Metalúrgica</b></p>
+                    <p class="info_sin_margin">Cnel. Arévalo 640</p>
+                    <p style="font-size: 12px;">Villa Domínico, Avellaneda,
+                        <br> Pcia. Buenos Aires
+                    </p>
+
+                    <ul style="list-style-type:none">
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            4206 8228
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:zulraymetal@yahoo.com.ar?subject=Consulta" target="_blank">zulraymetal@yahoo.com.ar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex_contacto_maps">
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.6397510922984!2d-58.32503798519221!3d-34.68904056952372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3325773e0b17b%3A0xf7ee82a1950be628!2sZulray%20Metalurgica!5e0!3m2!1ses-419!2sar!4v1621522541312!5m2!1ses-419!2sar"
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+
+                <form>
+                    <div>
+                        <label for="name">Nombre</label>
+                        <br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono</label>
+                        <br>
+                        <input type="text" maxlength="10">
+                    </div>
+                    <div>
+                        <label for="consulta">Consulta </label>
+                        <br>
+                        <textarea style="width: 100%; height: 100px;"></textarea>
+                    </div>
+
+                    <button type="submit">Envíar</button>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_flex">
+            <div class="imagen_footer">
+                <img src="images/favicon_blanco.png" height="100px">
+            </div>
+            <div id="info_footer">
+                <p class="info_sin_margin"><b>Zulray Metalúrgica</b></p>
+                <p class="info_sin_margin">Cnel. Arévalo 640</p>
+                <p style="font-size: 12px;">Villa Domínico, Avellaneda,
+                    <br> Pcia. Buenos Aires
+                </p>
+            </div>
+            <div>
+                <ul id="mail_tel_footer" style="list-style-type:none">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        4206 8228
+                    </li>
+                    <li>
+                        
+                        <a href="mailto:zulraymetal@yahoo.com.ar?subject=Consulta"
+                            target="_blank"> 
+                            <i class="fas fa-envelope"></i>zulraymetal@yahoo.com.ar</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a id="mapa" href="mapa.html">Mapa del Sitio</a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
